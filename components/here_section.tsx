@@ -1,0 +1,42 @@
+'use client'
+import { Container } from "./container";
+import Image from "next/image";
+
+export default function Hero() {
+  return (
+    <div className="max-w-7xl mx-auto relative pt-16 pb-4">
+      <Container className="relative">
+        <div className="flex flex-col md:flex-row items-center justify-center">
+          <div className="w-full md:w-1/2 space-y-6">
+            <h1 className="text-4xl md:text-7xl font-bold">
+              A Simple Way <br /> to <span className="text-[#FF7E67]">Stand Out</span>
+            </h1>
+            <p className="text-lg text-gray-700">
+              A new way to connect with your audience<br />
+              through AI-driven interaction
+            </p>
+            <div className="flex flex-wrap gap-4 pt-4">
+              <button className="bg-[#FF7E67] hover:bg-[#ff6a50] text-white font-medium py-3 px-6 rounded-full">
+                Start Free Trial
+              </button>
+              <button className="border border-gray-300 hover:border-gray-400 font-medium py-3 px-6 rounded-full">
+                Watch Demo
+              </button>
+            </div>
+          </div>
+          <div className="w-full md:w-1/3 ">
+            <div className="relative h-80 w-80 md:h-96 md:w-96 mx-auto bg-gray-200 rounded-full">
+              <Image
+                src="/images/assets/hero-vector.png"
+                alt="Person with key illustration"
+                fill
+                className="object-contain scale-125"
+                priority
+              />
+            </div>
+          </div>
+        </div>
+      </Container>
+    </div>
+  )
+}
