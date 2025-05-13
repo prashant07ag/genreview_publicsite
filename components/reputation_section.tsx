@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 const ReputationBoostSection = () => {
   return (
-    <div className="pt-8 pb-2">
+    <div className="py-4">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center justify-center gap-8">
           {/* Left side - Illustration */}

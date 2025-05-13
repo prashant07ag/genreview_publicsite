@@ -8,19 +8,19 @@ function CallToAction() {
   return (
     <div className="relative pb-16 pt-20 text-center sm:py-24">
       <hgroup>
-        <p className="mt-6 text-3xl font-medium tracking-tight text-gray-950 sm:text-5xl">
+        <p className="mt-6 text-3xl font-medium tracking-tight text-white sm:text-5xl">
           Start collecting reviews
           <br />
           absolutely free
         </p>
       </hgroup>
-      <p className="mx-auto mt-6 max-w-xs text-sm/6 text-gray-500">
+      <p className="mx-auto mt-6 max-w-xs text-sm/6 text-gray-300">
         Add your business today and start collecting feedback and reviews from your customers
         <br />
         <b>No credit card required.</b>
       </p>
       <div className="mt-6">
-        <Button className="w-full sm:w-auto" href="/app/auth/sign-up">
+        <Button className="w-full sm:w-auto bg-gray-50 text-gray-900" href="/app/auth/sign-up">
           Start Collecting Reviews
         </Button>
       </div>
@@ -29,7 +29,7 @@ function CallToAction() {
 }
 
 function SitemapHeading({ children }: { children: React.ReactNode }) {
-  return <h3 className="text-sm/6 font-medium text-gray-950/50">{children}</h3>
+  return <h3 className="text-sm/6 font-medium text-gray-300">{children}</h3>
 }
 
 function SitemapLinks({ children }: { children: React.ReactNode }) {
@@ -41,7 +41,7 @@ function SitemapLink(props: React.ComponentPropsWithoutRef<typeof Link>) {
     <li>
       <Link
         {...props}
-        className="font-medium text-gray-950 data-[hover]:text-gray-950/75"
+        className="font-medium text-white hover:text-gray-300 transition-colors data-[hover]:text-gray-400"
       />
     </li>
   )
@@ -118,7 +118,7 @@ function SocialLinks() {
         href="https://facebook.com/bitwisebuilder/"
         target="_blank"
         aria-label="Visit us on Facebook"
-        className="text-gray-950 data-[hover]:text-gray-950/75"
+        className="text-white hover:text-gray-300 transition-colors data-[hover]:text-gray-400"
       >
         <SocialIconFacebook className="size-4" />
       </Link>
@@ -126,7 +126,7 @@ function SocialLinks() {
         href="https://x.com/BitwiseBuilder"
         target="_blank"
         aria-label="Visit us on X"
-        className="text-gray-950 data-[hover]:text-gray-950/75"
+        className="text-white hover:text-gray-300 transition-colors data-[hover]:text-gray-400"
       >
         <SocialIconX className="size-4" />
       </Link>
@@ -134,7 +134,7 @@ function SocialLinks() {
         href="https://www.linkedin.com/company/ship-scale/"
         target="_blank"
         aria-label="Visit us on LinkedIn"
-        className="text-gray-950 data-[hover]:text-gray-950/75"
+        className="text-white hover:text-gray-300 transition-colors data-[hover]:text-gray-400"
       >
         <SocialIconLinkedIn className="size-4" />
       </Link>
@@ -144,9 +144,9 @@ function SocialLinks() {
 
 function Copyright() {
   return (
-    <div className="text-sm/6 text-gray-950">
+    <div className="text-sm/6 text-gray-300">
       &copy; {new Date().getFullYear()} { ' ' }
-      <a href="https://shiptoscale.com" target="_blank" rel="noopener noreferrer">
+      <a href="https://shiptoscale.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-colors">
         ShipScale Software Solutions Pvt Ltd.
       </a>
     </div>
@@ -155,10 +155,10 @@ function Copyright() {
 
 export function Footer() {
   return (
-    <footer className='bg-gradient-to-br from-pink-50 to-purple-50 border-4 border-gray-200'>
+    <footer className='bg-gray-900'>
         <Container>
-          <CallToAction />
-          <div className="pb-16">
+          {/* <CallToAction /> */}
+          <div className="pb-16 pt-4 border-t-2 border-gray-500">
             <div>
               <div className="grid grid-cols-2 gap-y-10 pb-6 lg:grid-cols-6 lg:gap-8">
                 <div className="col-span-2 flex">

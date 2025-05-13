@@ -31,7 +31,7 @@ export default function RootLayout({
         />
         <link rel="icon" href="/logo/favicon.ico" type="image/x-icon" />
       </head>
-      <body className="bg-orange-50 text-foreground">
+      <body className="bg-[#f9f5f1] text-foreground">
         <Container>
           <Navbar />    
         </Container>

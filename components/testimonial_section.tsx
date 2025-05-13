@@ -4,22 +4,22 @@ import Image from 'next/image'
 const TestimonialsSection = () => {
   const testimonials = [
     {
-      avatar: '/images/assets/hero-vector.png',
+      avatar: '/images/assets/avatar1.png',
       stars: 5,
       quote: 'The platform is user-friendly and has greatly improved our online experience.',
-      name: 'Sarah W.'
-    },
-    {
-      avatar: '/images/assets/hero-vector.png',
-      stars: 5,
-      quote: 'We\'ve seen a significant increase in positive reviews. Highly recommend!',
       name: 'James T.'
     },
     {
-      avatar: '/images/assets/hero-vector.png',
+      avatar: '/images/assets/avatar2.png',
+      stars: 5,
+      quote: 'We\'ve seen a significant increase in positive reviews. Highly recommend!',
+      name: 'Sarah W.'
+    },
+    {
+      avatar: '/images/assets/avatar3.png',
       stars: 5,
       quote: 'Excellent tool for managing reviews and gaining valuable insights.',
-      name: 'Emily R.'
+      name: 'Sam J.'
     },
   ]
 
@@ -32,29 +32,34 @@ const TestimonialsSection = () => {
   }
 
   return (
-    <div className="max-w-7xl mx-auto py-8">
-      <div className="container mx-auto px-4">
+    <div className="py-16">
+      <div className="max-w-7xl mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-12">What customers are saying</h2>
         
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="bg-gray-50 py-8 px-4 rounded-lg shadow-sm flex flex-col items-center text-center h-full justify-between">
-              <div className="relative w-36 h-36 mb-4">
+            <div 
+              key={index} 
+              className="bg-white py-10 px-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center h-full justify-between border border-orange-100 hover:border-orange-200 transform hover:-translate-y-1"
+            >
+              <div className="relative w-28 h-28 mb-5">
+                <div className="absolute inset-0 bg-gradient-to-br from-orange-100 to-yellow-100 rounded-full -z-10 transform scale-110"></div>
                 <Image
                   src={testimonial.avatar}
                   alt={`${testimonial.name} avatar`}
                   fill
-                  className="object-cover rounded-full"
+                  className="object-cover rounded-full ring-4 ring-white shadow-md"
                 />
               </div>
               
-              <div className="flex mb-5">
+              <div className="flex mb-4 bg-yellow-50 px-3 py-1 rounded-full">
                 {renderStars(testimonial.stars)}
               </div>
               
-              <p className="text-gray-700 mb-6 flex-grow">"{testimonial.quote}"</p>
+              <p className="text-gray-700 mb-6 flex-grow italic text-lg">"{testimonial.quote}"</p>
               
-              <p className="font-medium mt-auto">{testimonial.name}</p>
+              <div className="w-12 h-1 bg-gradient-to-r from-orange-200 to-yellow-200 rounded-full mb-4"></div>
+              <p className="font-semibold text-gray-800 mt-auto">{testimonial.name}</p>
             </div>
           ))}
         </div>
