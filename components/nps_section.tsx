@@ -32,7 +32,7 @@ const NPSFilterSection = () => {
   ]
 
   return (
-    <div className="pb-16 max-w-7xl mx-auto">
+    <div className="py-16 max-w-7xl mx-auto">
       <div className="flex flex-col md:flex-row justify-center items-center gap-4">
         {/* Left side - Content */}
         <div className="md:w-1/2 space-y-6">

@@ -32,7 +32,7 @@ const FeaturesSection = () => {
   ]
 
   return (
-    <div className='max-w-7xl mx-auto py-24'>
+    <div className='max-w-7xl mx-auto py-16'>
       <div className='flex flex-col lg:flex-row gap-8 items-center justify-center'>
         {/* Features Grid - Now on the left */}
         <div className='lg:w-1/2 flex flex-col items-center gap-10'>
