@@ -22,11 +22,11 @@ const AnalyticsDashboardSection = () => {
   ]
 
   return (
-    <div className="pb-16 max-w-7xl mx-auto">
-      <div className="flex flex-col md:flex-row items-center justify-center gap-2">
+    <div className="md:py-16 py-8 max-w-7xl mx-auto">
+      <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-8 md:gap-2">
         {/* Left side - Content */}
-        <div className="md:w-1/3 flex justify-center">
-          <div className="relative w-full h-[400px]">
+        <div className="w-full md:w-1/3 flex justify-center">
+          <div className="relative w-full md:h-[400px] h-[300px]">
             <Image
               src="/images/assets/analytics_section.png"
               alt="Analytics Dashboard Illustration"
@@ -37,7 +37,7 @@ const AnalyticsDashboardSection = () => {
         </div>
         
         {/* Right side - Illustration */}
-        <div className="md:w-1/2 space-y-6">
+        <div className="w-full md:w-1/2 space-y-6 px-4">
           <h2 className="text-3xl md:text-4xl font-bold">
             Comprehensive Review <span className="text-[#FF7E67]">Analytics</span> & Insights
           </h2>

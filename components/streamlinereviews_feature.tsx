@@ -9,7 +9,7 @@ const StreamlineProcessSection = () => {
       title: 'SETUP',
       subtitle: 'Add Your Business Details',
       description: 'Easily set up your business profile with detailed information about your services, locations, and specialties. Our AI uses this to generate more relevant and authentic reviews.',
-      imagePath: '/images/assets/bussines_details.png',
+      imagePath: '/images/assets/bussinessdetail.png',
     },
     {
       id: 'collection',
@@ -23,14 +23,14 @@ const StreamlineProcessSection = () => {
       title: 'SUBSCRIPTIONS',
       subtitle: 'Flexible Review Plans',
       description: 'Scale your review collection with plans supporting up to 5,000 reviews per month across all your properties. Choose the perfect plan for your business needs.',
-      imagePath: '/images/assets/review_dashboard.png',
+      imagePath: '/images/assets/bussinessprogress.png',
     },
     {
       id: 'integration',
       title: 'INTEGRATION',
       subtitle: 'Multi-platform Integration',
-      description: 'Seamlessly connect with major review platforms like Google Maps, Yelp, TripAdvisor, Booking.com, Airbnb, and JustDial.',
-      imagePath: '/images/assets/analytics_section.png',
+      description: 'Seamlessly connect with major review platforms like Google Maps, Yelp, TripAdvisor, Booking.com, Airbnb, JustDial,zomato, swiggy and more.',
+      imagePath: '/images/assets/multiplatform.png',
     }
   ];
 

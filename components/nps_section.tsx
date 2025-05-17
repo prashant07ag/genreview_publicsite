@@ -32,10 +32,10 @@ const NPSFilterSection = () => {
   ]
 
   return (
-    <div className="py-16 max-w-7xl mx-auto">
-      <div className="flex flex-col md:flex-row justify-center items-center gap-4">
+    <div className="md:py-16 py-8 px-4 max-w-7xl mx-auto">
+      <div className="flex flex-col-reverse md:flex-row justify-center items-center gap-2 md:gap-4">
         {/* Left side - Content */}
-        <div className="md:w-1/2 space-y-6">
+        <div className="w-full md:w-1/2 space-y-6">
           <h2 className="text-3xl md:text-4xl font-bold">
             High-Quality Reviews Through NPS Filtering
           </h2>
@@ -66,7 +66,7 @@ const NPSFilterSection = () => {
             ))}
           </div>
           
-          <p className="text-gray-700 mt-6">
+          <p className="text-gray-700 my-4">
             Net Promoter Score (NPS) is the gold standard for measuring customer satisfaction. 
             By filtering reviews based on NPS scores, we ensure that only genuinely satisfied customers 
             share their experiences, maintaining the authenticity and positivity of your online presence.
@@ -80,8 +80,8 @@ const NPSFilterSection = () => {
         </div>
         
         {/* Right side - Illustration */}
-        <div className="md:w-1/3 flex justify-center">
-          <div className="relative w-full h-[400px]">
+        <div className="w-full md:w-1/3 flex justify-center">
+          <div className="relative w-full md:h-[400px] h-[300px]">
             <Image
               src="/images/assets/nps_section.png"
               alt="NPS Chart Illustration"

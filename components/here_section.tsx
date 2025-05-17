@@ -4,15 +4,15 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <div className="max-w-7xl mx-auto relative pt-16 pb-2">
+    <div className="max-w-7xl mx-auto relative py-8 md:py-16">
       <Container className="relative">
-        <div className="flex flex-col md:flex-row items-center justify-center">
+        <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-8">
           <div className="w-full md:w-1/2 space-y-6">
-            <h1 className="text-4xl md:text-7xl font-bold">
+            <h1 className="text-4xl md:text-6xl font-bold">
               A Simple Way <br /> to <span className="text-[#FF7E67]">Stand Out</span>
             </h1>
             <p className="text-lg text-gray-700">
-              A new way to connect with your audience<br />
+              A new way to connect with your audience
               through AI-driven interaction
             </p>
             <div className="flex flex-wrap gap-4 pt-4">
@@ -25,7 +25,7 @@ export default function Hero() {
             </div>
           </div>
           <div className="w-full md:w-1/3 ">
-            <div className="relative h-80 w-80 md:h-96 md:w-96 mx-auto bg-gray-200 rounded-full">
+            <div className="relative h-80 w-80 md:h-92 md:w-92 mx-auto bg-gray-200 rounded-full">
               <Image
                 src="/images/assets/hero-vector.png"
                 alt="Person with key illustration"

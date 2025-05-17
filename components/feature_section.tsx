@@ -32,46 +32,10 @@ const FeaturesSection = () => {
   ]
 
   return (
-    <div className='max-w-7xl mx-auto py-16'>
+    <div className='max-w-7xl mx-auto md:py-8 py-8'>
       <div className='flex flex-col lg:flex-row gap-8 items-center justify-center'>
         {/* Features Grid - Now on the left */}
         <div className='lg:w-1/2 flex flex-col items-center gap-10'>
-          <div className='mb-10 w-full'>
-            <div className='flex justify-center items-center gap-12'>
-              <div className='relative w-32 h-16'>
-                <Image
-                  src='/images/clients/coffea.png'
-                  alt='Client Logo 1'
-                  fill
-                  className='object-contain'
-                />
-              </div>
-              <div className='relative w-32 h-16'>
-                <Image
-                  src='/images/clients/happychases.png'
-                  alt='Client Logo 2'
-                  fill
-                  className='object-contain'
-                />
-              </div>
-              <div className='relative w-32 h-16'>
-                <Image
-                  src='/images/clients/zenith.png'
-                  alt='Client Logo 3'
-                  fill
-                  className='object-contain'
-                />
-              </div>
-              <div className='relative w-32 h-16'>
-                <Image
-                  src='/images/clients/tgf.png'
-                  alt='Client Logo 3'
-                  fill
-                  className='object-contain'
-                />
-              </div>
-            </div>
-          </div>
           <div className='grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8 place-items-center mx-auto'>
             {features.map((feature, index) => (
               <div key={index} className='flex flex-col gap-2 items-center text-center max-w-xs'>

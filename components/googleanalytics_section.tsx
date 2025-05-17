@@ -19,10 +19,10 @@ const BusinessAuditSection = () => {
   ]
 
   return (
-    <div className="py-16 px-4">
+    <div className="md:py-16 py-8 px-4">
       <div className="max-w-7xl mx-auto">
         {/* Heading Section */}
-        <div className="text-center mb-12">
+        <div className="md:text-center text-left mb-12">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Businesses are <span className="text-[#FF7E67]">improving visibility</span> <br />with astounding speed
           </h2>
@@ -35,7 +35,7 @@ const BusinessAuditSection = () => {
         {/* Three-column section with images on sides */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           {/* Left side image */}
-          <div className="md:w-1/4">
+          <div className="w-full md:w-1/4">
             <div className="relative h-[250px] w-full">
               <Image
                 src="/images/assets/google_section2.png"
@@ -66,7 +66,7 @@ const BusinessAuditSection = () => {
           </div>
 
           {/* Right side image */}
-          <div className="md:w-1/4">
+          <div className="w-full hidden md:block md:w-1/4">
             <div className="relative h-[250px] w-full">
               <Image
                 src="/images/assets/google_section.png"

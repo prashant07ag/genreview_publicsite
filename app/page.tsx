@@ -7,19 +7,19 @@ import NPSFilterSection from "@/components/nps_section";
 import AnalyticsDashboardSection from "@/components/analytics_section";
 import GoogleAnalyticsSection from "@/components/googleanalytics_section";
 import ReviewsSection  from "@/components/reviews_section";
-
+import ClientsSection from "@/components/clients";
 export default function Home() {
   return (
     <div className="overflow-hidden">
       <Hero />
+      <ClientsSection />
       <FeaturesSection />
       <ReviewsSection />
+      <TestimonialsSection />
       <AnalyticsDashboardSection />
       <GoogleAnalyticsSection />
       <NPSFilterSection />
       <ReputationBoostSection />
-      <TestimonialsSection />
-      
       <ReadyToStandOutSection />
     </div>
   );
