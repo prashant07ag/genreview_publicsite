@@ -65,7 +65,7 @@ const StreamlineProcessSection = () => {
                   src={feature.imagePath}
                   alt={feature.title}
                   fill
-                  className="object-contain"
+                  className="object-cover"
                 />
               </div>
             </div>
