@@ -40,10 +40,10 @@ const NPSFilterSection = () => {
             Get Authentic Reviews via <span className="text-[#FF7E67]">NPS</span> Filtering
           </h2>
 
-          <div className="flex items-center gap-3 mb-4">
+          {/* <div className="flex items-center gap-3 mb-4">
             <ChartBarIcon className="w-8 h-8 text-gray-800" />
             <h3 className="text-xl font-semibold">NPS Score &gt; 7/10</h3>
-          </div>
+          </div> */}
           
 
           <p className="text-gray-700 mb-6">
