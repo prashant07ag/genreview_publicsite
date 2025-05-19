@@ -37,48 +37,46 @@ const NPSFilterSection = () => {
         {/* Left side - Content */}
         <div className="w-full md:w-1/2 space-y-6">
           <h2 className="text-3xl md:text-4xl font-bold">
-          Get Authentic Reviews via <span className="text-[#FF7E67]">NPS</span> Filtering
+            Get Authentic Reviews via <span className="text-[#FF7E67]">NPS</span> Filtering
           </h2>
-          
+
           <div className="flex items-center gap-3 mb-4">
             <ChartBarIcon className="w-8 h-8 text-gray-800" />
             <h3 className="text-xl font-semibold">NPS Score &gt; 7/10</h3>
           </div>
           
+
           <p className="text-gray-700 mb-6">
-            We ensure authentic positive reviews by only allowing submissions from highly satisfied 
-            customers with NPS scores above 7.
+            Only customers with an NPS score above 7 can leave reviews, ensuring every review is real, positive, and reflects true satisfaction. Keep your online reputation strong, trustworthy, and glowing.
           </p>
-          
+
           <div className="flex flex-col md:flex-row gap-4">
             {npsCategories.map((category, index) => (
-              <div 
-                key={index} 
+              <div
+                key={index}
                 className={`flex flex-col items-center text-center p-4 rounded-lg border flex-1 ${category.borderColor} ${category.bgColor}`}
               >
                 <div className="flex items-center justify-center gap-2">
-                {category.icon}
-                <h4 className="font-semibold text-xl mb-2">{category.title}</h4>
+                  {category.icon}
+                  <h4 className="font-semibold text-xl mb-2">{category.title}</h4>
                 </div>
                 <div className="font-bold text-2xl mb-2">{category.range}</div>
                 <div className="text-gray-600 mt-2">{category.status}</div>
               </div>
             ))}
           </div>
-          
+
           <p className="text-gray-700 my-4">
-            Net Promoter Score (NPS) is the gold standard for measuring customer satisfaction. 
-            By filtering reviews based on NPS scores, we ensure that only genuinely satisfied customers 
-            share their experiences, maintaining the authenticity and positivity of your online presence.
+            Net Promoter Score (NPS) is the gold standard system to measure customer satisfaction - and only allow reviews from those who truly love your brand.
           </p>
-          
+
           <Link href="/learn-more-about-nps">
             <span className="inline-block mt-4 px-6 py-3 bg-[#FF7E67] text-white font-medium rounded-md hover:bg-[#ff6a50] transition-colors">
               Learn More About NPS
             </span>
           </Link>
         </div>
-        
+
         {/* Right side - Illustration */}
         <div className="w-full md:w-1/3 flex justify-center">
           <div className="relative w-full md:h-[400px] h-[300px]">

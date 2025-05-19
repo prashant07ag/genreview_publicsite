@@ -35,13 +35,13 @@ const BusinessAuditSection = () => {
         <div className="flex flex-col md:flex-row items-center justify-center gap-8">
           {/* Left side image */}
           <div className="w-full md:w-1/4">
-            <div className="relative h-2 md:h-[250px] w-full">
-              {/* <Image
+            <div className="relative md:h-[250px] w-full">
+              <Image
                 src="/images/assets/google_section2.png"
                 alt="Google Business Management"
                 fill
                 className="object-contain"
-              /> */}
+              />
             </div>
           </div>
 

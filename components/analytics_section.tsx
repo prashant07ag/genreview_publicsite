@@ -17,7 +17,7 @@ const AnalyticsDashboardSection = () => {
     {
       icon: <ChartPieIcon className="w-10 h-10 text-gray-800" />,
       title: "AI-Powered Sentiment Analysis",
-      description: "Go beyond the stars-uncover the true sentiment behind every review."
+      description: "Go beyond the star ratings understand the true sentiment behind every review."
     }
   ]
 

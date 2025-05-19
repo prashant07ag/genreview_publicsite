@@ -29,7 +29,7 @@ function CallToAction() {
 }
 
 function SitemapHeading({ children }: { children: React.ReactNode }) {
-  return <h3 className="text-sm/6 font-medium text-gray-300">{children}</h3>
+  return <h3 className="text-sm/6 font-medium text-gray-600">{children}</h3>
 }
 
 function SitemapLinks({ children }: { children: React.ReactNode }) {
@@ -41,7 +41,7 @@ function SitemapLink(props: React.ComponentPropsWithoutRef<typeof Link>) {
     <li>
       <Link
         {...props}
-        className="font-medium text-white hover:text-gray-300 transition-colors data-[hover]:text-gray-400"
+        className="font-medium text-gray-800 hover:text-gray-900 transition-colors data-[hover]:text-gray-900"
       />
     </li>
   )
@@ -118,7 +118,7 @@ function SocialLinks() {
         href="https://facebook.com/bitwisebuilder/"
         target="_blank"
         aria-label="Visit us on Facebook"
-        className="text-white hover:text-gray-300 transition-colors data-[hover]:text-gray-400"
+        className="text-gray-800 hover:text-gray-900 transition-colors data-[hover]:text-gray-900"
       >
         <SocialIconFacebook className="size-4" />
       </Link>
@@ -126,7 +126,7 @@ function SocialLinks() {
         href="https://x.com/BitwiseBuilder"
         target="_blank"
         aria-label="Visit us on X"
-        className="text-white hover:text-gray-300 transition-colors data-[hover]:text-gray-400"
+        className="text-gray-800 hover:text-gray-900 transition-colors data-[hover]:text-gray-900"
       >
         <SocialIconX className="size-4" />
       </Link>
@@ -134,7 +134,7 @@ function SocialLinks() {
         href="https://www.linkedin.com/company/ship-scale/"
         target="_blank"
         aria-label="Visit us on LinkedIn"
-        className="text-white hover:text-gray-300 transition-colors data-[hover]:text-gray-400"
+        className="text-gray-800 hover:text-gray-900 transition-colors data-[hover]:text-gray-900"
       >
         <SocialIconLinkedIn className="size-4" />
       </Link>
@@ -144,9 +144,9 @@ function SocialLinks() {
 
 function Copyright() {
   return (
-    <div className="text-sm/6 text-gray-300">
+    <div className="text-sm/6 text-gray-800">
       &copy; {new Date().getFullYear()} { ' ' }
-      <a href="https://shiptoscale.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-colors">
+      <a href="https://shiptoscale.com" target="_blank" rel="noopener noreferrer" className="text-gray-800 hover:text-gray-900 transition-colors">
         ShipScale Software Solutions Pvt Ltd.
       </a>
     </div>
@@ -155,7 +155,7 @@ function Copyright() {
 
 export function Footer() {
   return (
-    <footer className='bg-[#FF7E67]'>
+    <footer className='bg-orange-200'>
         <Container>
           {/* <CallToAction /> */}
           <div className="pb-16 pt-4">
