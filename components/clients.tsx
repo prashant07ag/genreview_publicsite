@@ -22,7 +22,7 @@ const ClientLogos = () => {
   ]
 
   return (
-    <div className='mb-4 w-full'>
+    <div className='my-8 w-full'>
       <div className='flex flex-wrap justify-center items-center gap-12'>
         {clients.map((client, index) => (
           <div key={index} className='relative w-32 h-16'>

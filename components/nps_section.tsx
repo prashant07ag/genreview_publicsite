@@ -47,7 +47,7 @@ const NPSFilterSection = () => {
           
 
           <p className="text-gray-700 mb-6">
-            Only customers with an NPS score above 7 can leave reviews, ensuring every review is real, positive, and reflects true satisfaction. Keep your online reputation strong, trustworthy, and glowing.
+          We invite feedback from our most satisfied customers. This helps ensure that the reviews you see reflect genuine experiences from those who've had real success with your services.
           </p>
 
           <div className="flex flex-col md:flex-row gap-4">
@@ -61,13 +61,12 @@ const NPSFilterSection = () => {
                   <h4 className="font-semibold text-xl mb-2">{category.title}</h4>
                 </div>
                 <div className="font-bold text-2xl mb-2">{category.range}</div>
-                <div className="text-gray-600 mt-2">{category.status}</div>
               </div>
             ))}
           </div>
 
           <p className="text-gray-700 my-4">
-            Net Promoter Score (NPS) is the gold standard system to measure customer satisfaction - and only allow reviews from those who truly love your brand.
+            Net Promoter Score (NPS) is the gold standard system to measure customer satisfaction.
           </p>
 
           <Link href="/learn-more-about-nps">

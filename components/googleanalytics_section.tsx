@@ -4,12 +4,12 @@ import Image from 'next/image'
 const BusinessAuditSection = () => {
   const statistics = [
     {
-      value: "3x",
-      description: "Get 3x better insights into your business performance"
-    },
-    {
       value: "50%",
       description: "Get 50% more reviews with our review management system.",
+    },
+    {
+      value: "3x",
+      description: "Get 3x better insights into your business performance",
       highlighted: true
     },
     {
