@@ -11,24 +11,26 @@ const FeaturesSection = () => {
   const features = [
     {
       icon: <ChartBarIcon className="w-10 h-10 text-gray-800" />,
-      title: 'Review Analytics',
-      description: 'Understand what your customers really think, and how to improve your business. '
+      title: 'Insightful Review Analytics',
+      description: 'Gain deep understanding of customer sentiments to drive business improvements.'
     },
     {
       icon: <CogIcon className="w-10 h-10 text-gray-800" />,
-      title: 'Automation',
-      description: 'Collect, respond, and monitor reviews without lifting a finger'
+      title: 'Seamless Automation',
+      description: 'Effortlessly collect, respond to, and monitor reviews with minimal effort.'
+    },
+
+    {
+      icon: <BellAlertIcon className="w-10 h-10 text-gray-800" />,
+      title: 'Instant Notifications',
+      description: 'Stay updated with real-time alerts for every new review.'
     },
     {
       icon: <DocumentTextIcon className="w-10 h-10 text-gray-800" />,
-      title: 'Custom Templates',
-      description: 'Personalized messaging for every touchpoint'
+      title: 'Tailored Messaging Templates',
+      description: 'Engage your audience with the personalized communications at every interaction point.'
     },
-    {
-      icon: <BellAlertIcon className="w-10 h-10 text-gray-800" />,
-      title: 'Real-Time Alerts',
-      description: 'Get notified instantly for every new review'
-    }
+    
   ]
 
   return (
@@ -36,7 +38,7 @@ const FeaturesSection = () => {
       <div className='flex flex-col lg:flex-row gap-8 items-center justify-center'>
         {/* Features Grid - Now on the left */}
         <div className='lg:w-1/2 flex flex-col items-center gap-10'>
-          <div className='grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8 place-items-center mx-auto'>
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-12 place-items-center mx-auto'>
             {features.map((feature, index) => (
               <div key={index} className='flex flex-col gap-2 items-center text-center max-w-xs'>
                 <div className='mb-2'>

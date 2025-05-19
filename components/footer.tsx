@@ -155,10 +155,10 @@ function Copyright() {
 
 export function Footer() {
   return (
-    <footer className='bg-gray-900'>
+    <footer className='bg-[#FF7E67]'>
         <Container>
           {/* <CallToAction /> */}
-          <div className="pb-16 pt-4 border-t-2 border-gray-500">
+          <div className="pb-16 pt-4">
             <div>
               <div className="grid grid-cols-2 gap-y-10 pb-6 lg:grid-cols-6 lg:gap-8">
                 <div className="col-span-2 flex">

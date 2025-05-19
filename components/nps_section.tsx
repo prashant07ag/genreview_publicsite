@@ -37,7 +37,7 @@ const NPSFilterSection = () => {
         {/* Left side - Content */}
         <div className="w-full md:w-1/2 space-y-6">
           <h2 className="text-3xl md:text-4xl font-bold">
-            High-Quality Reviews Through NPS Filtering
+          Get Authentic Reviews via <span className="text-[#FF7E67]">NPS</span> Filtering
           </h2>
           
           <div className="flex items-center gap-3 mb-4">

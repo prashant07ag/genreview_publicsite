@@ -8,9 +8,9 @@ export default function Hero() {
       <Container className="relative">
         <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-8">
           <div className="w-full md:w-1/2 space-y-6">
-            <h1 className="text-4xl md:text-6xl font-bold">
-              A Simple Way <br /> to <span className="text-[#FF7E67]">Stand Out</span>
-            </h1>
+            <h2 className="text-4xl md:text-6xl font-bold text-gray-900 leading-tight">
+              Get <span className="text-[#ff6a50]">5★ Reviews</span> in Under 5 Minutes
+            </h2>
             <p className="text-lg text-gray-700">
               A new way to connect with your audience
               through AI-driven interaction

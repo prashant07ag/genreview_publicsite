@@ -21,11 +21,11 @@ const ReputationBoostSection = () => {
           {/* Right side - Content */}
           <div className="md:w-1/2 md:max-w-lg">
             <h2 className="text-4xl font-bold text-navy-900 mb-4">
-              Boost your business reputation
+            Enhance Your Business Reputation
             </h2>
             
             <p className="text-gray-700 mb-8">
-              Increase your online reputation by managing and generating authentic reviews. Use our platform to stand out and grow your business.
+            Elevate your online presence by effectively managing reviews. Our platform helps you grow your business faster by turning satisfied customers into your most powerful marketing tool.
             </p>
             
             <Link href="/get-started">

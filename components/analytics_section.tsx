@@ -7,17 +7,17 @@ const AnalyticsDashboardSection = () => {
     {
       icon: <ChartBarIcon className="w-10 h-10 text-gray-800" />,
       title: "NPS Score Tracking",
-      description: "Monitor customer satisfaction with detailed Net Promoter Score analytics"
+      description: "Gauge customer satisfaction at a glance with real-time Net Promoter Score tracking,"
     },
     {
       icon: <ArrowTrendingUpIcon className="w-10 h-10 text-gray-800" />,
-      title: "Rating Trends",
-      description: "Visualize your review performance over time with customizable date ranges"
+      title: "Rating Trends Over Time",
+      description: "Spot patterns and performance shifts instantly."
     },
     {
       icon: <ChartPieIcon className="w-10 h-10 text-gray-800" />,
-      title: "Sentiment Analysis",
-      description: "Understand the emotion behind customer feedback with AI-powered analysis"
+      title: "AI-Powered Sentiment Analysis",
+      description: "Go beyond the stars-uncover the true sentiment behind every review."
     }
   ]
 
@@ -39,11 +39,11 @@ const AnalyticsDashboardSection = () => {
         {/* Right side - Illustration */}
         <div className="w-full md:w-1/2 space-y-6 px-4">
           <h2 className="text-3xl md:text-4xl font-bold">
-            Comprehensive Review <span className="text-[#FF7E67]">Analytics</span> & Insights
+           In-Depth <span className="text-[#FF7E67]">Review Analytics</span> & Insights
           </h2>
           
           <p className="text-gray-700 mb-6">
-            Track every aspect of your review performance with detailed analytics, from NPS scores to rating trends and customer sentiment analysis.
+          Monitor every facet of your review performance with advanced analytics, including NPS tracking, rating trends, and AI-driven sentiment analysis.
           </p>
           
           <div className="space-y-6 mt-8">

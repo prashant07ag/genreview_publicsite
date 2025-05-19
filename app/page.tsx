@@ -14,8 +14,8 @@ export default function Home() {
       <Hero />
       <ClientsSection />
       <FeaturesSection />
-      <ReviewsSection />
-      <TestimonialsSection />
+      {/* <ReviewsSection /> */}
+      {/* <TestimonialsSection /> */}
       <AnalyticsDashboardSection />
       <GoogleAnalyticsSection />
       <NPSFilterSection />

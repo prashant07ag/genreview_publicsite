@@ -4,17 +4,17 @@ import Image from 'next/image'
 const BusinessAuditSection = () => {
   const statistics = [
     {
-      value: "+70%",
-      description: "Increase in search visibility with optimized Google Business Profile"
+      value: "3x",
+      description: "Get 3x better insights into your business performance"
     },
     {
-      value: "60%",
-      description: "More customer engagement through managed review responses",
+      value: "50%",
+      description: "Get 50% more reviews with our review management system.",
       highlighted: true
     },
     {
       value: "+45%",
-      description: "Higher conversion rate from Google Maps searches"
+      description: "Higher conversion rate from Google Maps searches."
     }
   ]
 
@@ -22,27 +22,26 @@ const BusinessAuditSection = () => {
     <div className="md:py-16 py-8 px-4">
       <div className="max-w-7xl mx-auto">
         {/* Heading Section */}
-        <div className="md:text-center text-left mb-12">
+        <div className="md:text-center text-left">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Businesses are <span className="text-[#FF7E67]">improving visibility</span> <br />with astounding speed
+          Accelerate Your <span className="text-[#FF7E67]">Business </span> Visibility
           </h2>
           <p className="max-w-3xl mx-auto text-gray-700">
-            Complete business profile management and Google audit services powered by AI. Optimize your 
-            online presence as effectively as dedicated marketing teams, with scalable solutions for businesses of any size.
+          Leverage AI-powered online reputation management to enhance your online presence, matching the efficiency of top-tier marketing teams—scalable for businesses of all sizes.
           </p>
         </div>
 
         {/* Three-column section with images on sides */}
-        <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-8">
           {/* Left side image */}
           <div className="w-full md:w-1/4">
-            <div className="relative h-[250px] w-full">
-              <Image
+            <div className="relative h-2 md:h-[250px] w-full">
+              {/* <Image
                 src="/images/assets/google_section2.png"
                 alt="Google Business Management"
                 fill
                 className="object-contain"
-              />
+              /> */}
             </div>
           </div>
 
@@ -51,7 +50,7 @@ const BusinessAuditSection = () => {
             {statistics.map((stat, index) => (
               <div 
                 key={index} 
-                className={`p-6 rounded-lg text-center ${
+                className={`p-4 rounded-lg text-center ${
                   stat.highlighted 
                     ? "bg-[#FF7E67] text-white shadow-lg" 
                     : "bg-gray-50 text-gray-800 border border-gray-200"
