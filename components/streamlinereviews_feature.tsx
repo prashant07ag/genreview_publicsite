@@ -29,43 +29,43 @@ const StreamlineProcessSection = () => {
       id: 'integration',
       title: 'INTEGRATION',
       subtitle: 'Multi-platform Integration',
-      description: 'Seamlessly connect with major review platforms like Google Maps, Yelp, TripAdvisor, Booking.com, Airbnb, JustDial,zomato, swiggy and more.',
+      description: 'Seamlessly connect with major review platforms like Google Maps, Yelp, TripAdvisor, Booking.com, Airbnb, JustDial, Zomato, Swiggy and more.',
       imagePath: '/images/assets/multiplatform.png',
     }
   ];
 
   return (
     <Container className="max-w-7xl mx-auto py-16">
-      <div className="mb-8 text-center">
+      <div className="mb-2 md:mb-12 text-center">
         <div className="inline-flex items-center px-2.5 py-1 bg-[#FF7F50]/10 rounded-full mb-4">
           <span className="flex h-2 w-2 rounded-full bg-[#FF7F50] mr-2 animate-pulse"></span>
           <span className="text-sm font-semibold text-[#FF7F50] tracking-wide">Bussiness Reputation Management</span>
         </div>
         <h2 className="text-2xl sm:text-5xl font-bold text-gray-900">
-          Streamline your <span className="text-[#FF7E67]">review collection</span> process.
+          Streamline your <span className="text-[#FF7E67]">Review Collection</span> process.
         </h2>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-y-2">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-y-4 md:gap-y-8">
         {features.map((feature, index) => (
-          <div key={feature.id} className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+          <div key={feature.id} className="grid grid-cols-1 md:grid-cols-2 gap-2 items-center">
             {/* Content section - alternates left/right based on index */}
             <div className={`order-2 ${index % 2 !== 0 ? 'md:order-2' : 'md:order-2'}`}>
               <div className="mb-1">
                 <span className="text-xs font-semibold text-gray-500">{feature.title}</span>
               </div>
               <h3 className="text-lg font-bold mb-2 text-gray-900">{feature.subtitle}</h3>
-              <p className="text-sm text-gray-600">{feature.description}</p>
+              <p className="text-sm md:text-base text-gray-600">{feature.description}</p>
             </div>
 
             {/* Image section - alternates right/left based on index */}
             <div className={`order-1 ${index % 2 !== 0 ? 'md:order-1' : 'md:order-1'} flex justify-center`}>
-              <div className="relative h-[320px] w-[280px] mx-auto">
+              <div className="relative h-[200px] w-[200px] mx-auto">
                 <Image
                   src={feature.imagePath}
                   alt={feature.title}
                   fill
-                  className="object-contain p-4"
+                  className="object-cover p-4"
                 />
               </div>
             </div>

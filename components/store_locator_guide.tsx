@@ -28,7 +28,7 @@ const StoreLocatorGuide = () => {
   ];
 
   return (
-    <Container className="py-16 ">
+    <Container className="md:py-16 py-8">
       <div className="text-center mb-16">
         <span className="inline-block px-5 py-1.5 bg-[#FF7E67]/10 rounded-full text-[#FF7E67] text-sm font-medium mb-4">
           Embedable Store Locator
