@@ -4,7 +4,7 @@ import { ChartBarIcon, CpuChipIcon, UserGroupIcon, ShieldCheckIcon } from "@hero
 
 export default function Feature_hero() {
   return (
-    <div className="max-w-7xl mx-auto relative pt-24 pb-16">
+    <div className="max-w-7xl mx-auto relative md:pt-24 pt-16 pb-16">
       <Container className="relative">
         <div className="flex flex-col md:flex-row items-center justify-center">
           <div className="w-full md:w-1/2 space-y-6">

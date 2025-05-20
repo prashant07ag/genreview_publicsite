@@ -6,7 +6,7 @@ const DashboardTrends = () => {
     const [timeRange, setTimeRange] = useState('Last 30 days');
 
     return (
-        <Container className="py-16">
+        <Container className="md:py-16 py-8">
             <div className="flex flex-col md:flex-row gap-8 items-center justify-center mb-6 bg-gradient-to-br from-white to-gray-50 py-10 px-5 rounded-lg border border-gray-200 shadow-sm">
                 {/* Content about dashboard benefits */}
                 <div className="md:w-1/2">
@@ -88,7 +88,7 @@ const DashboardTrends = () => {
                 </div>
 
                 {/* Dashboard Preview */}
-                <div className="md:w-1/2">
+                <div className="hidden md:block md:w-1/2">
                     <div className="mb-4 flex justify-between items-center">
                         <h1 className="text-2xl font-bold text-gray-900">Dashboard</h1>
 

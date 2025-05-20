@@ -5,7 +5,7 @@ import {
   DisclosureButton,
   DisclosurePanel,
 } from '@headlessui/react'
-import { Bars2Icon } from '@heroicons/react/24/solid'
+import { Bars2Icon, XMarkIcon } from '@heroicons/react/24/solid'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -36,41 +36,63 @@ function DesktopNav() {
   )
 }
 
-function MobileNavButton() {
+function MobileNavButton({ open }: { open: boolean }) {
   return (
     <DisclosureButton
       className="flex size-12 items-center justify-center self-center rounded-lg data-[hover]:bg-black/5 lg:hidden"
-      aria-label="Open main menu"
+      aria-label={open ? "Close main menu" : "Open main menu"}
     >
-      <Bars2Icon className="size-6" />
+      {open ? (
+        <XMarkIcon className="size-6" />
+      ) : (
+        <Bars2Icon className="size-6" />
+      )}
     </DisclosureButton>
   )
 }
 
-function MobileNav() {
+function MobileNav({ close }: { close: () => void }) {
   return (
-    <DisclosurePanel className="lg:hidden">
-      <div className="flex flex-col gap-6 py-4">
-        {links.map(({ href, label, target}, linkIndex) => (
-          <motion.div
-            initial={{ opacity: 0, rotateX: -90 }}
-            animate={{ opacity: 1, rotateX: 0 }}
-            transition={{
-              duration: 0.15,
-              ease: 'easeInOut',
-              rotateX: { duration: 0.3, delay: linkIndex * 0.1 },
-            }}
-            key={href}
-          >
-            <Link href={href} className="text-base font-medium text-gray-950" target={target}>
-              {label}
+    <DisclosurePanel className="lg:hidden fixed inset-0 z-50 bg-[#f9f5f1]">
+      <div className="container mx-auto px-6 pt-4">
+        <div className="flex justify-between items-center mb-8">
+          <div className="py-2">
+            <Link href="/" title="Home" onClick={() => close()}>
+              <Image src="/logo/main.png" alt="GenReview" width={76} height={76} />
             </Link>
-          </motion.div>
-        ))}
-      </div>
-      <div className="absolute left-1/2 w-screen -translate-x-1/2">
-        <div className="absolute inset-x-0 top-0 border-t border-black/5" />
-        <div className="absolute inset-x-0 top-2 border-t border-black/5" />
+          </div>
+          <DisclosureButton
+            className="flex size-12 items-center justify-center"
+            aria-label="Close main menu"
+          >
+            <XMarkIcon className="size-8 text-gray-700" />
+          </DisclosureButton>
+        </div>
+        
+        <div className="flex flex-col gap-6 mt-6">
+          {links.map(({ href, label, target}, linkIndex) => (
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{
+                duration: 0.2,
+                ease: 'easeOut',
+                delay: linkIndex * 0.05,
+              }}
+              key={href}
+              className="border-b border-gray-200 pb-6"
+            >
+              <Link 
+                href={href} 
+                className="flex items-center text-xl font-medium text-gray-900 hover:text-gray-700 transition-colors" 
+                target={target}
+                onClick={() => close()}
+              >
+                {label}
+              </Link>
+            </motion.div>
+          ))}
+        </div>
       </div>
     </DisclosurePanel>
   )
@@ -79,25 +101,29 @@ function MobileNav() {
 export function Navbar({ banner }: { banner?: React.ReactNode }) {
   return (
     <Disclosure as="header" className="pt-4 sm:pt-4">
-      <div className="container mx-auto px-4">
-        <div className="relative flex justify-between">
-          <div className="relative flex gap-6">
-            <div className="py-3">
-              <Link href="/" title="Home">
-                <Image src="/logo/main.png" alt="GenReview" width={96} height={96} />
-              </Link>
-            </div>
-            {banner && (
-              <div className="relative hidden items-center py-3 lg:flex">
-                {banner}
+      {({ open, close }) => (
+        <>
+          <div className="container mx-auto px-4">
+            <div className="relative flex justify-between">
+              <div className="relative flex gap-6">
+                <div className="py-3">
+                  <Link href="/" title="Home">
+                    <Image src="/logo/main.png" alt="GenReview" width={96} height={96} />
+                  </Link>
+                </div>
+                {banner && (
+                  <div className="relative hidden items-center py-3 lg:flex">
+                    {banner}
+                  </div>
+                )}
               </div>
-            )}
+              <DesktopNav />
+              <MobileNavButton open={open} />
+            </div>
           </div>
-          <DesktopNav />
-          <MobileNavButton />
-        </div>
-      </div>
-      <MobileNav />
+          <MobileNav close={close} />
+        </>
+      )}
     </Disclosure>
   )
 }

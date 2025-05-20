@@ -4,7 +4,7 @@ import { Button } from './button';
 
 const AIReviewsFeature = () => {
     return (
-        <div className="max-w-7xl mx-auto py-16">
+        <div className="max-w-7xl mx-auto md:py-16 py-8">
             {/* Background elements */}
             <div className="absolute -left-32 top-20 w-64 h-64 rounded-full bg-[#FF7F50]/10 blur-3xl"></div>
             <div className="absolute right-0 bottom-0 w-96 h-96 rounded-full bg-chart-4/10 blur-3xl"></div>

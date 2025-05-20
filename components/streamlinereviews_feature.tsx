@@ -46,7 +46,7 @@ const StreamlineProcessSection = () => {
         </h2>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-y-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-y-2">
         {features.map((feature, index) => (
           <div key={feature.id} className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
             {/* Content section - alternates left/right based on index */}
@@ -60,12 +60,12 @@ const StreamlineProcessSection = () => {
 
             {/* Image section - alternates right/left based on index */}
             <div className={`order-1 ${index % 2 !== 0 ? 'md:order-1' : 'md:order-1'} flex justify-center`}>
-              <div className="relative w-full max-w-xs aspect-square">
+              <div className="relative h-[320px] w-[280px] mx-auto">
                 <Image
                   src={feature.imagePath}
                   alt={feature.title}
                   fill
-                  className="object-cover"
+                  className="object-contain p-4"
                 />
               </div>
             </div>

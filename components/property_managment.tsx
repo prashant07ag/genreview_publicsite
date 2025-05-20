@@ -5,10 +5,10 @@ import Image from 'next/image';
 
 const PropertyManagementFeature = () => {
     return (        
-            <div className="max-w-7xl mx-auto py-16">
+            <div className="max-w-7xl mx-auto md:py-16 py-8">
                 <div className="flex flex-col md:flex-row gap-12 items-center">
                     {/* Left content: Title and description */}
-                    <div className="md:w-1/2 flex flex-col justify-center">
+                    <div className="md:w-1/2 flex flex-col justify-center px-4">
                         
                         <h2 className="text-4xl font-bold text-gray-900 mb-5 leading-tight">
                             Manage All Your <span className="text-[#FF7F50]">Business Properties</span> in One Place
@@ -101,7 +101,7 @@ const PropertyManagementFeature = () => {
                     </div>
                     
                     {/* Right content: Frame for screenshot */}
-                    <div className="md:w-1/2 relative">
+                    <div className="hidden md:block md:w-1/2 relative">
                         <div className="absolute -top-10 -left-10 w-64 h-64 bg-[#FF7F50]/5 rounded-full filter blur-xl z-0"></div>
                         <div className="absolute -bottom-10 -right-10 w-64 h-64 bg-[#FF7F50]/5 rounded-full filter blur-xl z-0"></div>
                         
