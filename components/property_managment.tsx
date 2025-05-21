@@ -2,10 +2,11 @@
 import React from 'react';
 import { Container } from './container';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const PropertyManagementFeature = () => {
     return (        
-            <div className="max-w-7xl mx-auto py-16">
+            <div className="max-w-7xl mx-auto py-16 ">
                 <div className="flex flex-col md:flex-row gap-12 items-center">
                     {/* Left content: Title and description */}
                     <div className="md:w-1/2 flex flex-col justify-center px-6 md:px-8">
@@ -92,16 +93,16 @@ const PropertyManagementFeature = () => {
                             </div>
                         </div>
 
-                        <button className="mt-10 inline-flex items-center bg-[#FF7F50] text-white px-6 py-3 rounded-lg text-sm font-medium w-fit hover:bg-[#FF7F50]/90 transition-colors shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                        <Link href="/app/auth/sign-in" className="mt-10 inline-flex items-center bg-[#FF7F50] text-white px-6 py-3 rounded-lg text-sm font-medium w-fit hover:bg-[#FF7F50]/90 transition-colors shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
                             Get Started
                             <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
                             </svg>
-                        </button>
+                        </Link>
                     </div>
                     
                     {/* Right content: Frame for screenshot */}
-                    <div className="hidden md:block md:w-1/2 relative">
+                    <div className="hidden md:block md:w-1/2 relative pr-8">
                         <div className="absolute -top-10 -left-10 w-64 h-64 bg-[#FF7F50]/5 rounded-full filter blur-xl z-0"></div>
                         <div className="absolute -bottom-10 -right-10 w-64 h-64 bg-[#FF7F50]/5 rounded-full filter blur-xl z-0"></div>
                         

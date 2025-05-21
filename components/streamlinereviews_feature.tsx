@@ -8,41 +8,41 @@ const StreamlineProcessSection = () => {
       id: 'setup',
       title: 'SETUP',
       subtitle: 'Add Your Business Details',
-      description: 'Easily set up your business profile with detailed information about your services, locations, and specialties. Our AI uses this to generate more relevant and authentic reviews.',
+      description: 'Set up your business profile in minutes! Add your services, locations, and specialties.',
       imagePath: '/images/assets/bussinessdetail.png',
     },
     {
       id: 'collection',
       title: 'COLLECTION',
-      subtitle: 'Custom Review Links & QR Codes',
-      description: 'Generate unique review collection URLs and QR codes to display at your business locations. Make it easy for customers to leave reviews while they\'re still at your venue.',
+      subtitle: 'Custom Review QR Codes',
+      description: 'Display smart URLs and QR codes at your locations to make it effortless for customers to leave reviews.',
       imagePath: '/images/assets/qrscan.png',
     },
     {
       id: 'subscriptions',
       title: 'SUBSCRIPTIONS',
       subtitle: 'Flexible Review Plans',
-      description: 'Scale your review collection with plans supporting up to 5,000 reviews per month across all your properties. Choose the perfect plan for your business needs.',
+      description: 'From startups to enterprise-level operations, Choose from scalable plans supporting up to 5,000 reviews per month across all your locations.',
       imagePath: '/images/assets/bussinessprogress.png',
     },
     {
       id: 'integration',
       title: 'INTEGRATION',
       subtitle: 'Multi-platform Integration',
-      description: 'Seamlessly connect with major review platforms like Google Maps, Yelp, TripAdvisor, Booking.com, Airbnb, JustDial, Zomato, Swiggy and more.',
+      description: 'Effortlessly connect to all major review sites- Google Maps, Yelp, TripAdvisor, Booking.com, Airbnb, JustDial, Zomato, Swiggy, and many more.',
       imagePath: '/images/assets/multiplatform.png',
     }
   ];
 
   return (
-    <Container className="max-w-7xl mx-auto py-16">
+    <Container className="max-w-6xl mx-auto py-16">
       <div className="mb-2 md:mb-12 text-center">
         <div className="inline-flex items-center px-2.5 py-1 bg-[#FF7F50]/10 rounded-full mb-4">
           <span className="flex h-2 w-2 rounded-full bg-[#FF7F50] mr-2 animate-pulse"></span>
           <span className="text-sm font-semibold text-[#FF7F50] tracking-wide">Bussiness Reputation Management</span>
         </div>
         <h2 className="text-2xl sm:text-5xl font-bold text-gray-900">
-          Streamline your <span className="text-[#FF7E67]">Review Collection</span> process.
+        Effortless <span className="text-[#FF7E67]">Review Collection</span> Starts here
         </h2>
       </div>
 

@@ -61,7 +61,7 @@ function Sitemap() {
       <div>
         <SitemapHeading>Company</SitemapHeading>
         <SitemapLinks>
-          <SitemapLink href="https://shiptoscale.com">About Us</SitemapLink>
+          <SitemapLink href="https://shiptoscale.com" target="_blank">About Us</SitemapLink>
         </SitemapLinks>
       </div>
       {/* <div>

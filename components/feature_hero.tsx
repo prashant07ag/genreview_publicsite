@@ -1,6 +1,7 @@
 'use client'
 import { Container } from "./container";
 import { ChartBarIcon, CpuChipIcon, UserGroupIcon, ShieldCheckIcon } from "@heroicons/react/24/outline";
+import Link from "next/link";
 
 export default function Feature_hero() {
   return (
@@ -16,16 +17,15 @@ export default function Feature_hero() {
               Unlock Your <span className="text-[#FF7E67]">Full Potential</span>
             </h1>
             <p className="text-lg text-gray-700">
-              Discover the tools and features designed to enhance<br />
-              your experience and drive exceptional results
+            Unleash next-level growth with advanced tools crafted to <br /> elevate your online reputation and drive real results
             </p>
             <div className="flex gap-2 pt-4">
-              <button className="bg-[#FF7E67] hover:bg-[#ff6a50] text-white font-medium py-3 px-6 rounded-full">
-                Explore Features
-              </button>
-              <button className="border border-gray-300 hover:border-gray-400 font-medium py-3 px-6 rounded-full">
+              <Link href="/pricing" className="bg-[#FF7E67] hover:bg-[#ff6a50] text-white font-medium py-3 px-8 rounded-full">
                 See Pricing
-              </button>
+              </Link>
+              {/* <Link href="/app/auth/sign-in" className="bg-white border border-[#FF7E67] hover:bg-transparent text-[#FF7E67] font-medium py-3 px-6 rounded-full">
+                Get Started
+              </Link> */}
             </div>
           </div>
           <div className="w-full md:w-1/3 mt-12 md:mt-0">
@@ -35,28 +35,29 @@ export default function Feature_hero() {
                   <ChartBarIcon className="h-6 w-6 text-[#FF7E67]" />
                 </div>
                 <h3 className="font-semibold text-lg mb-1">Smart Analytics</h3>
-                <p className="text-sm text-gray-600">Real-time insights to make better decisions</p>
+                <p className="text-sm text-gray-600">Make smarter decisions with real-time, actionable insights.</p>
               </div>
               <div className="bg-white p-4 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <div className="h-12 w-12 bg-[#FF7E67]/10 rounded-lg flex items-center justify-center mb-3">
                   <CpuChipIcon className="h-6 w-6 text-[#FF7E67]" />
                 </div>
                 <h3 className="font-semibold text-lg mb-1">AI Integration</h3>
-                <p className="text-sm text-gray-600">Powerful automation for your workflow</p>
+                <p className="text-sm text-gray-600">Automate your workflow effortlessly with AI support.</p>
               </div>
               <div className="bg-white p-4 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <div className="h-12 w-12 bg-[#FF7E67]/10 rounded-lg flex items-center justify-center mb-3">
                   <UserGroupIcon className="h-6 w-6 text-[#FF7E67]" />
                 </div>
                 <h3 className="font-semibold text-lg mb-1">Easy Collaboration</h3>
-                <p className="text-sm text-gray-600">Seamless teamwork and sharing</p>
+                <p className="text-sm text-gray-600">Enhance teamwork with seamless collaboration and sharing.
+                </p>
               </div>
               <div className="bg-white p-4 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <div className="h-12 w-12 bg-[#FF7E67]/10 rounded-lg flex items-center justify-center mb-3">
                   <ShieldCheckIcon className="h-6 w-6 text-[#FF7E67]" />
                 </div>
                 <h3 className="font-semibold text-lg mb-1">Secure Platform</h3>
-                <p className="text-sm text-gray-600">Enterprise-grade security built-in</p>
+                <p className="text-sm text-gray-600">Your data, our top priority. Experience built-in, enterprise-grade security</p>
               </div>
             </div>
           </div>

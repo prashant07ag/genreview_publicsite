@@ -1,10 +1,11 @@
 'use client'
 import { Container } from "./container";
 import Image from "next/image";
+import Link from 'next/link'
 
 export default function Hero() {
   return (
-    <div className="max-w-7xl mx-auto relative py-8 md:py-24">
+    <div className="max-w-7xl mx-auto relative py-16 md:py-24">
       <Container className="relative">
         <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-8">
           <div className="w-full md:w-1/2 space-y-6">
@@ -16,20 +17,21 @@ export default function Hero() {
               through AI-driven interaction
             </p>
             <div className="flex flex-wrap gap-4 pt-4">
-              <button className="bg-[#FF7E67] hover:bg-[#ff6a50] text-white font-medium py-3 px-6 rounded-full">
+              <Link href="/app/auth/sign-in" className="bg-[#FF7E67] hover:bg-[#ff6a50] text-white font-medium py-3 px-6 rounded-full inline-flex items-center transition-all">
                 Start Free Trial
-              </button>
-              <button className="border border-gray-300 hover:border-gray-400 font-medium py-3 px-6 rounded-full">
+              </Link>
+              <Link href="/contact" className="border border-gray-300 hover:border-gray-400 font-medium py-3 px-6 rounded-full inline-flex items-center transition-all">
                 Watch Demo
-              </button>
+              </Link>
             </div>
           </div>
           <div className="w-full md:w-1/3 ">
-            <div className="relative h-80 w-80 md:h-92 md:w-92 mx-auto bg-gray-200 rounded-full">
+            <div className="relative ">
               <Image
-                src="/images/assets/hero-vector.png"
+                src="/images/assets/heroimage.png"
                 alt="Person with key illustration"
-                fill
+                width={500}
+                height={500}
                 className="object-contain scale-125"
                 priority
               />

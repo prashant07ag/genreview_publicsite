@@ -28,7 +28,7 @@ const ReputationBoostSection = () => {
             Elevate your online presence by effectively managing reviews. Our platform helps you grow your business faster by turning satisfied customers into your most powerful marketing tool.
             </p>
             
-            <Link href="/get-started">
+            <Link href="/app/auth/sign-in">
               <span className="inline-block px-6 py-3 bg-[#FF7E67] text-white font-medium rounded-md hover:bg-[#ff6a50] transition-colors">
                 Get Started
               </span>
