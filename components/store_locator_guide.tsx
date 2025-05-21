@@ -22,7 +22,7 @@ const StoreLocatorGuide = () => {
     },
     {
       title: "Add To Your Website",
-      description: "Copy the code and paste it into your website.",
+      description: "Copy, paste, and go live, your locations are now searchable and clickable.",
       image: "/images/assets/storelocator4.png",
     }
   ];
@@ -34,11 +34,11 @@ const StoreLocatorGuide = () => {
           Embedable Store Locator
         </span>
         <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-gray-900 mb-4 leading-tight">
-          <span className="text-[#FF7E67]">Help Customers</span> Find Your Location
+        Make <span className="text-[#FF7E67]">Your Business</span> Easy to Find 
         </h2>
         <div className="w-16 h-1.5 bg-gradient-to-r from-[#FF7E67] to-[#F89F81] mx-auto mb-6 rounded-full"></div>
         <p className="max-w-2xl mx-auto text-lg text-gray-600">
-          Set up in minutes with no coding required.
+        Set up your location in minutes—no coding required.
         </p>
       </div>
       

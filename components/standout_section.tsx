@@ -29,7 +29,7 @@ const ReadyToStandOutSection = () => {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                <Link href="/request-demo">
+                <Link href="/contact">
                   <span className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#FF7E67] text-white font-medium rounded-md hover:bg-[#ff6a50] transition-all shadow-md hover:shadow-lg transform hover:-translate-y-1">
                     Request Demo
                     <ArrowRightIcon className="w-5 h-5" />

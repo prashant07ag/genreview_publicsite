@@ -69,7 +69,7 @@ const NPSFilterSection = () => {
             Net Promoter Score (NPS) is the gold standard system to measure customer satisfaction.
           </p>
 
-          <Link href="/learn-more-about-nps">
+          <Link href="https://blog.genreview.io/top-nps-survey-questions-that-actually-get-responses/" target="_blank">
             <span className="inline-block mt-4 px-6 py-3 bg-[#FF7E67] text-white font-medium rounded-md hover:bg-[#ff6a50] transition-colors">
               Learn More About NPS
             </span>

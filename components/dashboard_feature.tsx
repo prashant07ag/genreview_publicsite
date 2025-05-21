@@ -1,25 +1,26 @@
 'use client';
 import React, { useState } from 'react';
 import { Container } from './container';
+import Link from 'next/link';
 
 const DashboardTrends = () => {
     const [timeRange, setTimeRange] = useState('Last 30 days');
 
     return (
         <Container className="md:py-8">
-            <div className="flex flex-col md:flex-row gap-8 items-center justify-center mb-6 bg-gradient-to-br from-white to-gray-50 py-10 px-5 rounded-lg border border-gray-200 shadow-sm">
+            <div className="flex flex-col md:flex-row gap-8 items-center justify-center mb-6 bg-gradient-to-br from-white to-gray-50 py-6 px-5 rounded-lg border border-gray-200 shadow-sm">
                 {/* Content about dashboard benefits */}
                 <div className="md:w-1/2">
-                    <div className="inline-flex items-center px-2.5 py-1 bg-[#FF7F50]/10 rounded-full mb-3">
+                    {/* <div className="inline-flex items-center px-2.5 py-1 bg-[#FF7F50]/10 rounded-full mb-3">
                         <span className="flex h-2 w-2 rounded-full bg-[#FF7F50] mr-2 animate-pulse"></span>
                         <span className="text-sm font-semibold text-[#FF7F50] tracking-wide">REAL-TIME ANALYTICS</span>
-                    </div>
+                    </div> */}
 
                     <h2 className="text-3xl font-bold text-gray-900 mb-2 leading-tight">
                         Unlock Valuable Customer <span className="text-[#FF7F50]">Insights</span>
                     </h2>
                     <p className="text-base text-gray-700 mb-4 border-b border-gray-100 pb-4">
-                        Our comprehensive dashboard transforms customer feedback into actionable intelligence, helping you make informed business decisions.
+                        Make smarter decisions with a dashboard that transforms customer reviews into clear, actionable data- so you can spot trends, improve experiences, and stay ahead.
                     </p>
 
                     <div className="space-y-4 mb-5">
@@ -32,7 +33,7 @@ const DashboardTrends = () => {
                             </div>
                             <div>
                                 <p className="text-base font-medium text-gray-800 mb-0.5">Visualize Performance Trends</p>
-                                <p className="text-sm text-gray-600 leading-relaxed">Track NPS and rating metrics across time periods, locations, and customer segments with intuitive charts.</p>
+                                <p className="text-sm text-gray-600 leading-relaxed">Monitor NPS and ratings over time, by location, or customer segment all in one powerful, easy-to-read dashboard.</p>
                             </div>
                         </div>
 
@@ -75,15 +76,15 @@ const DashboardTrends = () => {
                     </div>
 
                     <div className="flex flex-col sm:flex-row gap-3">
-                        <button className="flex-grow py-3 px-5 bg-[#FF7F50] text-white rounded-md text-base font-medium hover:bg-[#FF6A3C] transition-colors shadow-md">
+                        <Link href="/app/auth/sign-in" className="flex-grow py-3 px-5 bg-[#FF7F50] text-white rounded-md text-base text-center font-medium hover:bg-[#FF6A3C] transition-colors shadow-md">
                             Start Free 14-Day Trial
-                        </button>
-                        <button className="flex items-center justify-center py-3 px-5 border border-gray-200 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 transition-colors">
+                        </Link>
+                        <Link href="/contact" className="flex items-center justify-center py-3 px-5 border border-gray-200 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 transition-colors">
                             <svg className="h-5 w-5 mr-2 text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
                             </svg>
                             Watch Demo
-                        </button>
+                        </Link>
                     </div>
                 </div>
 
@@ -93,29 +94,17 @@ const DashboardTrends = () => {
                         <h1 className="text-2xl font-bold text-gray-900">Dashboard</h1>
 
                         <div className="flex items-center gap-2">
-                            <div className="relative">
-                                <select
-                                    value={timeRange}
-                                    onChange={(e) => setTimeRange(e.target.value)}
-                                    className="bg-white border border-gray-200 rounded-md py-1.5 px-3 pr-6 text-sm appearance-none focus:outline-none"
-                                >
-                                    <option>Last 30 days</option>
-                                    <option>Last 7 days</option>
-                                </select>
-                                <div className="absolute right-2 top-1/2 transform -translate-y-1/2 pointer-events-none">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                        <polyline points="6 9 12 15 18 9"></polyline>
-                                    </svg>
-                                </div>
+                            <div className="bg-white border border-gray-200 rounded-md py-1.5 px-3 text-sm">
+                                Last 30 days
                             </div>
 
                             <div className="hidden md:flex items-center gap-1 text-sm">
-                                <div className="flex items-center border border-gray-200 rounded-md">
-                                    <input type="date" className="w-32 px-2 py-1.5 text-sm focus:outline-none" defaultValue="2025-04-14" />
+                                <div className="flex items-center border border-gray-200 rounded-md px-2 py-1.5">
+                                    2025-04-14
                                 </div>
                                 <span className="text-sm text-gray-500">to</span>
-                                <div className="flex items-center border border-gray-200 rounded-md">
-                                    <input type="date" className="w-32 px-2 py-1.5 text-sm focus:outline-none" defaultValue="2025-05-14" />
+                                <div className="flex items-center border border-gray-200 rounded-md px-2 py-1.5">
+                                    2025-05-14
                                 </div>
                             </div>
                         </div>
@@ -175,25 +164,7 @@ const DashboardTrends = () => {
                         {/* NPS Trend */}
                         <div className="bg-white rounded-md shadow-sm border border-gray-200 p-4">
                             <div className="flex justify-between items-center mb-3">
-                                <div className="flex items-center gap-1">
-                                    <h3 className="text-base font-bold text-gray-900">NPS Trend</h3>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-gray-400">
-                                        <circle cx="12" cy="12" r="10"></circle>
-                                        <line x1="12" y1="16" x2="12" y2="12"></line>
-                                        <line x1="12" y1="8" x2="12.01" y2="8"></line>
-                                    </svg>
-                                </div>
-
-                                <div className="relative">
-                                    <select className="bg-white border border-gray-200 rounded-md py-1.5 px-2 pr-6 text-sm appearance-none focus:outline-none">
-                                        <option>Overall</option>
-                                    </select>
-                                    <div className="absolute right-2 top-1/2 transform -translate-y-1/2 pointer-events-none">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                            <polyline points="6 9 12 15 18 9"></polyline>
-                                        </svg>
-                                    </div>
-                                </div>
+                                <h3 className="text-base font-bold text-gray-900">NPS Trend - Overall</h3>
                             </div>
 
                             <div className="h-44 relative">
@@ -252,25 +223,7 @@ const DashboardTrends = () => {
                         {/* Rating Trend */}
                         <div className="bg-white rounded-md shadow-sm border border-gray-200 p-4">
                             <div className="flex justify-between items-center mb-3">
-                                <div className="flex items-center gap-1">
-                                    <h3 className="text-base font-bold text-gray-900">Rating Trend</h3>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-gray-400">
-                                        <circle cx="12" cy="12" r="10"></circle>
-                                        <line x1="12" y1="16" x2="12" y2="12"></line>
-                                        <line x1="12" y1="8" x2="12.01" y2="8"></line>
-                                    </svg>
-                                </div>
-
-                                <div className="relative">
-                                    <select className="bg-white border border-gray-200 rounded-md py-1.5 px-2 pr-6 text-sm appearance-none focus:outline-none">
-                                        <option>Overall</option>
-                                    </select>
-                                    <div className="absolute right-2 top-1/2 transform -translate-y-1/2 pointer-events-none">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                            <polyline points="6 9 12 15 18 9"></polyline>
-                                        </svg>
-                                    </div>
-                                </div>
+                                <h3 className="text-base font-bold text-gray-900">Rating Trend - Overall</h3>
                             </div>
 
                             <div className="h-44 relative">

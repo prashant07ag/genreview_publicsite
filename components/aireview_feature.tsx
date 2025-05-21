@@ -12,17 +12,17 @@ const AIReviewsFeature = () => {
             <Container className="relative z-10">
                 {/* Header */}
                 <div className="flex flex-col items-start mb-12 text-left">
-                    <div className="inline-flex items-center py-1 bg-[#FF7F50]/10 rounded-full mb-4">
+                    <div className="inline-flex items-center p-2 bg-[#FF7F50]/10 rounded-full mb-4 ">
                         <span className="flex h-2 w-2 rounded-full bg-[#FF7F50] mr-2 animate-pulse"></span>
                         <span className="text-sm font-semibold text-[#FF7F50] tracking-wide">AI-POWERED REVIEWS</span>
                     </div>
 
                     <h2 className="text-2xl md:text-5xl font-bold text-gray-900 mb-6 max-w-3xl leading-tight">
-                        <span className="text-[#FF7F50]">5-Star Reviews</span> for your <br /> business with AI
+                        AI-Driven <span className="text-[#FF7F50]">5-Star Reviews</span> for Your Business Growth
                     </h2>
 
                     <p className="text-xl text-gray-600 mb-6 max-w-2xl">
-                        We help businesses get more authentic-sounding customer reviews that build trust and increase conversions.
+                        We help businesses collect more genuine customer reviews to build trust and boost conversions.
                     </p>
                 </div>
 
@@ -45,7 +45,7 @@ const AIReviewsFeature = () => {
 
                             <div className="flex gap-4 items-start">
                                 <div className="w-10 h-10 bg-[#FF7F50]/10 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                                <svg className="w-5 h-5 text-[#FF7F50]" fill="currentColor" viewBox="0 0 20 20">
+                                    <svg className="w-5 h-5 text-[#FF7F50]" fill="currentColor" viewBox="0 0 20 20">
                                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                                     </svg>
                                 </div>
